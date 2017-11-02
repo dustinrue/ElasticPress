@@ -25,14 +25,14 @@ function _manually_load_plugin() {
 		$host = 'http://localhost:9200';
 	}
 
-	$user = getnev( 'EP_USER' );
+	$user = getenv( 'EP_USER' );
 	$pass = getenv( 'EP_PASS' );
 	
 	if ( !empty( $user ) && !empty( $pass ) ) {
 		define( 'EP_INDEX_PREFIX', sprintf( '%s-', $user ) );
 		define( 'ES_SHIELD', sprintf( '%s:%s', $user, $pass ) );
 	}
-	
+
 	update_option( 'ep_host', $host );
 	update_site_option( 'ep_host', $host );
 
