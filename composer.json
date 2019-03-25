@@ -1,5 +1,5 @@
 {
-  "name": "10up/elasticpress",
+  "name": "dustinrue/elasticpress",
   "description": "Supercharge WordPress with Elasticsearch.",
   "type": "wordpress-plugin",
   "keywords": ["wordpress", "plugin", "elasticsearch", "elasticpress", "search"],
