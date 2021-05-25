@@ -11,6 +11,7 @@ on:
     branches:
       - develop
       - master
+      - tests/*
   pull_request:
     branches:
       - develop
